@@ -13,6 +13,8 @@
 		4696E576254F406700646F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4696E574254F406700646F08 /* Main.storyboard */; };
 		4696E578254F406700646F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4696E577254F406700646F08 /* Assets.xcassets */; };
 		4696E57B254F406700646F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4696E579254F406700646F08 /* LaunchScreen.storyboard */; };
+		4696E58D254F41A300646F08 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4696E58C254F41A300646F08 /* CoreDataManager.swift */; };
+		4696E593254F46C400646F08 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4696E591254F46C400646F08 /* Notes.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4696E577254F406700646F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4696E57A254F406700646F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4696E57C254F406700646F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4696E58C254F41A300646F08 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		4696E592254F46C400646F08 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,81 @@
 		4696E56D254F406700646F08 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				4696E56E254F406700646F08 /* AppDelegate.swift */,
-				4696E570254F406700646F08 /* SceneDelegate.swift */,
-				4696E572254F406700646F08 /* ViewController.swift */,
-				4696E574254F406700646F08 /* Main.storyboard */,
-				4696E577254F406700646F08 /* Assets.xcassets */,
-				4696E579254F406700646F08 /* LaunchScreen.storyboard */,
-				4696E57C254F406700646F08 /* Info.plist */,
+				4696E590254F46B500646F08 /* Core Data */,
+				4696E58B254F419400646F08 /* Managers */,
+				4696E583254F407D00646F08 /* Application Delegate */,
+				4696E584254F408D00646F08 /* View Controllers */,
+				4696E586254F40A900646F08 /* Resources */,
+				4696E587254F40BB00646F08 /* Storyboards */,
+				4696E588254F40CD00646F08 /* Supporting Files */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		4696E583254F407D00646F08 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4696E56E254F406700646F08 /* AppDelegate.swift */,
+				4696E570254F406700646F08 /* SceneDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		4696E584254F408D00646F08 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4696E585254F409C00646F08 /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4696E585254F409C00646F08 /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4696E572254F406700646F08 /* ViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		4696E586254F40A900646F08 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4696E577254F406700646F08 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4696E587254F40BB00646F08 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4696E574254F406700646F08 /* Main.storyboard */,
+				4696E579254F406700646F08 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4696E588254F40CD00646F08 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4696E57C254F406700646F08 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4696E58B254F419400646F08 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4696E58C254F41A300646F08 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4696E590254F46B500646F08 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4696E591254F46C400646F08 /* Notes.xcdatamodeld */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4696E573254F406700646F08 /* ViewController.swift in Sources */,
+				4696E593254F46C400646F08 /* Notes.xcdatamodeld in Sources */,
 				4696E56F254F406700646F08 /* AppDelegate.swift in Sources */,
+				4696E58D254F41A300646F08 /* CoreDataManager.swift in Sources */,
 				4696E571254F406700646F08 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +360,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G8R9XCSYX;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +379,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5G8R9XCSYX;
-				INFOPLIST_FILE = Notes/Info.plist;
+				INFOPLIST_FILE = "Notes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +413,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4696E591254F46C400646F08 /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4696E592254F46C400646F08 /* Notes.xcdatamodel */,
+			);
+			currentVersion = 4696E592254F46C400646F08 /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4696E563254F406600646F08 /* Project object */;
 }
